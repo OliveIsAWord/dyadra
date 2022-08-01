@@ -1,0 +1,19 @@
+Operations Closed on the Proper Dyadic Rationals:
+
+Sign and Unary Agnostic:
+- Min / Max
+- Multiplication
+- "Complement" (a + complement(a) = if a > 0 { 1 } else { -1 })
+
+Unary Agnostic, Unsigned:
+- Average (reason: avg(1/2, -1/2) = 0)
+
+Unary Agnostic, Signed:
+- Negation (reason: obvious)
+
+
+
+
+
+multiplication impl:
+(a / 2 ^ b) * (c / 2 ^ d) = (a * c) / 2 ^ (b + d)
